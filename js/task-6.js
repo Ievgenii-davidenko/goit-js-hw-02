@@ -13,8 +13,5 @@ while (input !== null) {
 for (const number of numbers) {
   total += number;
 }
-// for (let i = 0; i < numbers.length; i += 1) {
-//   total += numbers[i];
-// }
 console.log(`Total sum is ${total}`);
 
