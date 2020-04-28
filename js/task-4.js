@@ -2,17 +2,18 @@
 
 
 const formatString = function(string) {
-  let message;
-  const originalString = string.split('');
-  const normalString = originalString.slice(0, 40);
+  const stringLength = string.length;
+  const limitOfLength = 40;
 
-  if (originalString <= normalString) {
-    message = `${originalString.join('')}`;
+  if (stringLength >limitOfLength) {
+    let slicedString = string.slice(0, 40);
+    
+    return slicedString + '...';
   } else {
-    message = `${normalString.join('')}...`;
+     return string ;
   }
 
-  return message;
+  // return message;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
