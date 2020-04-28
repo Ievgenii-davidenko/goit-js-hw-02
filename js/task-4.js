@@ -1,5 +1,6 @@
 'use strict';
 
+
 const formatString = function(string) {
   let message;
   const originalString = string.split('');
@@ -23,8 +24,7 @@ console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
 console.log(formatString('Curabitur ligula sapien.'));
 // вернется оригинальная строка
 
-console.log(
-  formatString(
+console.log(formatString(
     'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
   ),
 );
